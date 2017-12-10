@@ -14,42 +14,64 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
     overflow: hidden;
     background-color: #333;
 }
 
-li {
+/* Style the topnav links */
+.topnav a {
     float: left;
-}
-
-li a {
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
 </style>
 </head>
 <body style="background-color:white;">
 
 <h1>Assignment Directory</h1>
 <p>By Lauren Nevin (0602395)</p>
-	<ul>
-		<li><a href="Assign1/laurennevin.html">Assignment 1</a></li>
-		<li><a href="Assignment 2/Assign2 ESSAY.html">Assignment 2 Essay</li>
-		<li><a href="Assign3/Assignment 3">Assignment 3</li>
-		<li><a href="https://youtu.be/FVVwTC1GI_Q">Assignment 3 video</a></li>
-		<li><a href="laurennevin.html">Assignment 4</li>
-	</ul>	
+	<div class= "topnav">
+    <a href="Assign1/laurennevin.html">Assignment 1</a>
+        <a href="Assignment 2/Assign2 ESSAY.html">Assignment 2 Essay</a>
+    <a href="Assign3/Assignment 3">Assignment 3</a>
+    <a href="https://youtu.be/FVVwTC1GI_Q">Assignment 3 video</a>
+    <a href="laurennevin.html">Assignment 4 </a>
+    </div>
+    
 	<table>
 	<tr>
 		<th>Assignment</th>
