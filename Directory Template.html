@@ -1,71 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-* {
-    box-sizing: border-box;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-.header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-}
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.menu li:hover {
-    background-color: #0099cc;
-}
-.footer {
-	display:block;
-    float: left;
-    text-align: center;
-   	position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-	background-color: #f1f1f1;
-    padding: 10px;
-}
-img{
-	 max-width:50%;
-	max-height:50%;
-}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 #ref{
 	padding: 15px;
     width: 90%;
@@ -73,60 +17,56 @@ img{
     overflow: scroll;
     border: 1px solid #ccc;
 }
-.theme{
-	color:#000; 
-	background-color:#faf0fc
-}
-* {
-    box-sizing: border-box;
-}
-
 .video {
 	display: block;
    margin: 0 auto;
 }
-.content {
-	padding: 0px;
-    margin: 20px;
-}
-table, h1, p { 
-	color: black;
-    border-collapse: collapse;
-    width: 100%;
-}
-td, th { 
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-body {
-  margin: 0;
+img{
+	 max-width:50%;
+	max-height:50%;
 }
 </style>
-</head>
 <body>
 
-<div class="header">
-  <h1>Assignment directory</h1>
-</div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Assignment<br>Directory</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#assign1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">assignment 1</a> 
+    <a href="#assign2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">assignment 2</a> 
+    <a href="#assign3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">assignment 3</a> 
+    <a href="#assign4" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">assignment 4</a> 
+  </div>
+</nav>
 
-<div class="row">
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Assignment Directory</span>
+</header>
 
-<div class="col-3 menu">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#assign1">Assignment 1</a></li>
-    <li><a href="#assign2">Assignment 2</a></li>
-    <li><a href="#assign3">Assignment 3</a></li>
-    <li><a href="#assign3VIDEO">Assignment 3 video</a></li>
-    <li><a href="laurennevin.html">Assignment 4 </a></li>
-  </ul>
-</div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<div class="col-9">
-  <h1 id="assign1"><a href="Assign1/laurennevin.html">Assignment 1</a></h1>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-	<table>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>COIS2830</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Directory.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+ <div class="w3-container" id="assign1" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>One.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <table>
 	<tr>
 		<th>ORIGINAL</th>
 		<th>EDITED</th> 
@@ -189,10 +129,13 @@ body {
 		<td><a href="https://www.youtube.com/watch?v=9VNRCneM-xU">Followed this tutorial </a> </td>
 	</tr>
 	</table>
-</div>
-<div>
-<h1 id="assign2"><a href="Assignment 2/assign2 essay.html">Assignment 2</a></h1>
-<h3> Introduction </h3>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="assign2" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Two.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3> Introduction </h3>
 	<p>In today’s technological era, it’s hard to find a millennial that hasn’t illegally streamed or pirated some form of entertainment. Whether or not the people streaming are aware of its legality, it is an undeniably popular way to get entertainment. Due to safe harbors the legality of it all can be interpreted in different ways depending on the situation. In this essay I’ll be discussing ISP safe harbor laws, streaming and piracy and how they all intersect. Also, I’ll be suggesting new agreements from a user based perspective. </p>
 <h3> What is it? </h3>
 <p><abbr title="Internet Service Provider">ISP</abbr> Safe harbor laws are restrictions that specify certain circumstances that are deemed not to violate a rule or law. There are also <i>unsafe</i> harbors that are deemed in violation of a rule or law. Theoretically, the implementation of safe harbors combines vague standards and precise rules which gives judges a clear set of boundaries while also allowing them to decide on the cases in between at their own discretion (Morrison, 2013) </p>
@@ -302,9 +245,12 @@ increasing popular recently. Netflix is a company that has added 4.88 million su
 	<p>Urban, J., &amp; Karaganis, J. (2016). Notice and Takedown in Everyday Practice. <i>SSRN Electronic Journal</i>. http://dx.doi.org/10.2139/ssrn.2755628</p>
 </div>
 </div>
-<div class="content">
-<h1 id="assign3"><a href="Assign3/Assignment 3.html">Assignment 3</a></h1>
-<h3> Campaign Idea </h3>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="assign3" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Three.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3> Campaign Idea </h3>
 	<p>This product is called Project: Roommate. It’s a monthly subscription box that contains a craft 
 	with enough supplies for 4 final products, coupons for a night in and a night out, an optional 
 	disposable camera and snacks. My campaign is based on my own experience with roommates 
@@ -322,15 +268,38 @@ increasing popular recently. Netflix is a company that has added 4.88 million su
 <iframe class="video" id="assign3VIDEO" width="560" height="315" src="https://www.youtube.com/embed/FVVwTC1GI_Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-<div class="footer">
-<a href="#home">Back to top</a>
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="assign4" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+<!-- End page content -->
 </div>
 
-</body>
-</html>
-</div>
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
-</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
